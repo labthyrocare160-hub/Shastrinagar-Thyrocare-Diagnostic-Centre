@@ -8,39 +8,12 @@
   <meta name="keywords" content="Thyrocare Ahmedabad, Shastrinagar Diagnostic Centre, health packages, blood test, wellness profile, appointment booking">
   <meta name="author" content="Shastrinagar Thyrocare Diagnostic Centre">
   <link rel="canonical" href="https://www.shastrinagarthyrocare.com/">
-  
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Shastrinagar Thyrocare Diagnostic Centre">
-  <meta property="og:description" content="Affordable diagnostic packages with discounts. Book your appointment online.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.shastrinagarthyrocare.com/">
-  <meta property="og:image" content="https://www.shastrinagarthyrocare.com/logo.png">
-
-  <!-- Schema.org for Local Business -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Shastrinagar Thyrocare Diagnostic Centre",
-    "image": "https://www.shastrinagarthyrocare.com/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Shop No. 71, 44 Heights GHB, Ankur Road, Shastrinagar",
-      "addressLocality": "Ahmedabad",
-      "addressRegion": "Gujarat",
-      "postalCode": "380013",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-9510683160",
-    "url": "https://www.shastrinagarthyrocare.com/",
-    "openingHours": "Mo-Sa 08:00-20:00"
-  }
-  </script>
 
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
     header { background: #0066cc; color: white; padding: 20px; text-align: center; }
     h1 { margin: 0; }
+    .header-container { display:flex; align-items:center; justify-content:center; gap:15px; flex-wrap:wrap; }
     .packages { display: flex; flex-wrap: wrap; justify-content: center; margin: 20px; }
     .package { background: white; border: 1px solid #ddd; border-radius: 8px; width: 300px; margin: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .package h2 { color: #0066cc; }
@@ -50,6 +23,7 @@
     form input, form select, form button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
     form button { background: #0066cc; color: white; border: none; cursor: pointer; }
     form button:hover { background: #004999; }
+    .whatsapp-btn { background: #25D366; color: white; text-align:center; padding: 12px; border-radius: 5px; text-decoration:none; display:block; margin-top:10px; }
     footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
     .gujarati { font-family: "Noto Sans Gujarati", sans-serif; color: #444; margin-top: 5px; }
   </style>
@@ -57,9 +31,19 @@
 <body>
 
 <header>
-  <h1>Shastrinagar Thyrocare Diagnostic Centre</h1>
-  <p>Affordable Health Packages · Trusted Diagnostic Partner</p>
-  <p class="gujarati">શાસ્ત્રીનગર થાઇરોકેર ડાયગ્નોસ્ટિક સેન્ટર · વિશ્વસનીય આરોગ્ય પરીક્ષણ</p>
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="images/logo.png" alt="Shastrinagar Thyrocare Diagnostic Centre Logo" style="height:70px; width:auto;">
+    </a>
+    
+    <!-- Clinic Name -->
+    <div>
+      <h1>Shastrinagar Thyrocare Diagnostic Centre</h1>
+      <p>Affordable Health Packages · Trusted Diagnostic Partner</p>
+      <p class="gujarati">શાસ્ત્રીનગર થાઇરોકેર ડાયગ્નોસ્ટિક સેન્ટર · વિશ્વસનીય આરોગ્ય પરીક્ષણ</p>
+    </div>
+  </div>
 </header>
 
 <section class="packages">
@@ -89,7 +73,8 @@
 </section>
 
 <section>
-  <form>
+  <!-- Email Form via Formspree -->
+  <form action="https://formspree.io/f/yourFormID" method="POST">
     <h2>Book Your Appointment</h2>
     <p class="gujarati">તમારી અપોઇન્ટમેન્ટ બુક કરો</p>
 
@@ -101,9 +86,9 @@
 
     <label for="package">Select Package / પેકેજ પસંદ કરો</label>
     <select id="package" name="package" required>
-      <option value="mini">Mini Wellness Profile / મિની વેલનેસ પ્રોફાઇલ</option>
-      <option value="glycemic">Glycemic Status Panel / ગ્લાયસેમિક સ્ટેટસ પેનલ</option>
-      <option value="advanced">Advanced Wellness Profile / એડવાન્સ્ડ વેલનેસ પ્રોફાઇલ</option>
+      <option value="Mini Wellness Profile">Mini Wellness Profile</option>
+      <option value="Glycemic Status Panel">Glycemic Status Panel</option>
+      <option value="Advanced Wellness Profile">Advanced Wellness Profile</option>
     </select>
 
     <label for="date">Preferred Date / પસંદગીની તારીખ</label>
@@ -111,6 +96,11 @@
 
     <button type="submit">Confirm Appointment / અપોઇન્ટમેન્ટ કન્ફર્મ કરો</button>
   </form>
+
+  <!-- WhatsApp Direct Booking -->
+  <a class="whatsapp-btn" href="https://wa.me/919510683160?text=Hello%20Shastrinagar%20Thyrocare,%20I%20want%20to%20book%20an%20appointment." target="_blank">
+    📲 Book via WhatsApp
+  </a>
 </section>
 
 <footer>
