@@ -81,7 +81,7 @@
     <article class="package">
       <h2>Mini Wellness Profile</h2>
       <p class="gujarati" lang="gu">મિની વેલનેસ પ્રોફાઇલ</p>
-      <p class="price">₹1,395 → <span class="discount">₹549 (60% OFF)</span></p>
+      <p class="price">₹1,395 → <span class="discount">₹650 (53% OFF)</span></p>
       <p>Includes Hemogram, Lipid Profile, Creatinine, SGPT (ALT).</p>
       <p class="gujarati" lang="gu">હેમોગ્રામ, લિપિડ પ્રોફાઇલ, ક્રિએટિનિન, SGPT (ALT) સામેલ છે.</p>
     </article>
@@ -97,7 +97,7 @@
     <article class="package">
       <h2>Advanced Wellness Profile</h2>
       <p class="gujarati" lang="gu">એડવાન્સ્ડ વેલનેસ પ્રોફાઇલ</p>
-      <p class="price">₹3,674 → <span class="discount">₹1,249 (66% OFF)</span></p>
+      <p class="price">₹3,674 → <span class="discount">₹1,250 (66% OFF)</span></p>
       <p>Includes Hemogram, Lipid Profile, Sugar Tests, Liver Function, Thyroid, Calcium, Vitamin B‑12, Uric Acid.</p>
       <p class="gujarati" lang="gu">હેમોગ્રામ, લિપિડ પ્રોફાઇલ, શુગર ટેસ્ટ, લિવર ફંક્શન, થાયરોઇડ, કેલ્શિયમ, વિટામિન B‑12, યુરિક એસિડ સામેલ છે.</p>
     </article>
@@ -107,29 +107,33 @@
     <h2>Book Your Appointment</h2>
     <p class="gujarati" lang="gu">તમારી અપોઇન્ટમેન્ટ બુક કરો</p>
 
-    <form action="#" method="POST">
+    <!-- Formspree Endpoint Integrated Here -->
+    <form action="https://formspree.io/f/xgavrnaw" method="POST">
+      <!-- Email Subject in Notification -->
+      <input type="hidden" name="_subject" value="New Appointment Booking - Thyrocare Shastrinagar">
+
       <div class="form-group">
         <label for="name">Full Name / સંપૂર્ણ નામ</label>
-        <input type="text" id="name" name="name" required placeholder="Enter full name">
+        <input type="text" id="name" name="Full Name" required placeholder="Enter full name">
       </div>
 
       <div class="form-group">
         <label for="phone">Phone Number / ફોન નંબર</label>
-        <input type="tel" id="phone" name="phone" required placeholder="Enter mobile number">
+        <input type="tel" id="phone" name="Phone Number" required placeholder="Enter mobile number">
       </div>
 
       <div class="form-group">
         <label for="package">Select Package / પેકેજ પસંદ કરો</label>
-        <select id="package" name="package" required>
-          <option value="mini">Mini Wellness Profile / મિની વેલનેસ પ્રોફાઇલ</option>
-          <option value="glycemic">Glycemic Status Panel / ગ્લાયસેમિક સ્ટેટસ પેનલ</option>
-          <option value="advanced">Advanced Wellness Profile / એડવાન્સ્ડ વેલનેસ પ્રોફાઇલ</option>
+        <select id="package" name="Selected Package" required>
+          <option value="Mini Wellness Profile (₹650)">Mini Wellness Profile / મિની વેલનેસ પ્રોફાઇલ (₹650)</option>
+          <option value="Glycemic Status Panel (₹250)">Glycemic Status Panel / ગ્લાયસેમિક સ્ટેટસ પેનલ (₹250)</option>
+          <option value="Advanced Wellness Profile (₹1,250)">Advanced Wellness Profile / એડવાન્સ્ડ વેલનેસ પ્રોફાઇલ (₹1,250)</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="date">Preferred Date / પસંદગીની તારીખ</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="Preferred Date" required>
       </div>
 
       <button type="submit">Confirm Appointment / અપોઇન્ટમેન્ટ કન્ફર્મ કરો</button>
